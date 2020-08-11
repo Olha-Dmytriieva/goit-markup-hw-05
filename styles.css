@@ -255,6 +255,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .backdrop.is-hidden{
@@ -276,18 +277,38 @@ body {
 
 
 .hero-section-button{
-    display: inline-block;
+    
     font-weight: bold;
     font-size: 16px;
     line-height: 1.80;
-    display: inline-flex;
+    /* display: inline-flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: var(--accent-color);
     color: #fff;
     height: 50px;
     width: 200px;
-    text-decoration: none;
+    /* text-decoration: none; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    border-image: none;
+    border-style: none;
+    border-color: var(--accent-color);
+}
+
+.hero-section-button-modal{
+    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.80;
+    /* display: inline-flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: var(--accent-color);
+    color: #fff;
+    width: 200px;
+    height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-width: 0px;
