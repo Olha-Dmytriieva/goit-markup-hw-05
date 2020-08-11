@@ -38,8 +38,25 @@
     <section class="hero-section">
         <div class="container">
             <h1 class="hero-section-header">Эффективные решения для  Вашего бизнеса</h1>
-            <a href="#" class="hero-section-button">Заказать услугу</a>
+            <!-- <div class="hero-section-button" data-modal-open>Заказать услугу</div> -->
+            <button class="hero-section-button" data-modal-open>Заказать услугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal" >
+                    <h3>Оставьте свои данные, мы вам перезвоним</h3>
+                    <ul>
+                    <li>lalla</li>
+                    <li>lalala</li>
+                    <li>lalala</li>
+                    <li>lalala</li>
+                </ul>
+    
+                <button data-modal-close>close</button>
+                    
+                </div>
+            </div>
         </div>
+
+
     </section>
 
 <section class="our-benefits">
@@ -76,6 +93,7 @@
             </Li>
         </ul>
     </div>
+
 </section>
 
 <!---Чем мы занимаемся-->
@@ -217,7 +235,7 @@
         </div>
 </footer>
 
-
+<script src="./js/modal.js"></script>
     
 </body>
 </html>
