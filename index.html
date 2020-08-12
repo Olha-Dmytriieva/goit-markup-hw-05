@@ -42,15 +42,28 @@
             <button class="hero-section-button" data-modal-open>Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal" >
-                    <h3>Оставьте свои данные, мы вам перезвоним</h3>
-                    <ul>
-                    <li>lalla</li>
-                    <li>lalala</li>
-                    <li>lalala</li>
-                    <li>lalala</li>
-                </ul>
+                    <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
+                <form class="modal-form">
+
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Имя" class="input">
+
+                    <label for="phone"></label>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" class="input">
+
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Почта" class="input">
+                    
+                    <label for="textarea"></label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea"></textarea>
+                    
+                    
+                    <label class="agreement" for="checkbox"> <input type="checkbox" name="checkbox" id="checkbox"> Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    
+                    <button class="hero-section-button-modal" data-modal-close>Отправить</button>
+                </form>
     
-                <button class="hero-section-button-modal" data-modal-close>close</button>
+                <!-- <button class="hero-section-button-modal" data-modal-close>Отправить</button> -->
                     
                 </div>
             </div>
@@ -232,7 +245,17 @@
                 </ul>
             </div>
 
+            <form class="footer-modal-form">
+                <h3 class="footer-modal-headder">Подпишитесь на рассылку</h3>
+               <div class="footer-modal">
+                   <label for="email"></label>
+                <input  type="email"  name="email" id="email" placeholder="Email" class="input-footer">
+                <button class="footer-button-modal" data-modal-close>Подписаться <img class="footer-icon" src="/footer-pic/footer-icon.png" alt="Подписаться" width="25" height="24"></button></div>
+                
+            </form>
         </div>
+
+        
 </footer>
 
 <script src="./js/modal.js"></script>
