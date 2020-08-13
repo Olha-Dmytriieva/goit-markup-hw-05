@@ -45,14 +45,20 @@
                     <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
                 <form class="modal-form">
 
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="Имя" class="input">
-
-                    <label for="phone"></label>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" class="input">
-
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Почта" class="input">
+                    <div class="modal-section">
+                    <input type="text"  name="name" id="name" class="input">
+                    <label for="name" class="modal-name"> <svg class="icon-modal" width=20 height=20><use href="./sprite.svg#icon-modal-1"></use></svg> Имя</label>
+                    </div>
+                    
+                    <div class="modal-section">
+                    <input type="tel"  name="phone" id="phone" class="input">
+                    <label for="phone" class="modal-name"> <svg width=20 height=20><use href="./sprite.svg#icon-modal-2"></use></svg>Телефон</label>
+                    </div>
+                    
+                    <div class="modal-section">
+                    <input type="email"  name="email" id="email" class="input" >
+                    <label for="email" class="modal-name" > <svg width=20 height=20><use href="./sprite.svg#icon-modal-3"></use></svg>Почта</label>
+                    </div>
                     
                     <label for="textarea"></label>
                     <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea"></textarea>
