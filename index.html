@@ -44,29 +44,40 @@
                 <div class="modal" >
                     <h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
                 <form class="modal-form">
+                    <button type="reset" class="modal-svg-close">  <svg  width=11 height=11 ><use href="./sprite-modal.svg#icon-modal-close"></use></svg></button>
+                   
 
                     <div class="modal-section">
-                    <input type="text"  name="name" id="name" class="input">
-                    <label for="name" class="modal-name"> <svg class="icon-modal" width=20 height=20><use href="./sprite.svg#icon-modal-1"></use></svg> Имя</label>
+                        <input type="text"  name="name" id="name" class="input" placeholder=" " required>
+                        <label for="name" class="modal-name"> Имя</label>
+                        <svg class="modal-svg" width=12 height=20 ><use href="./sprite-modal.svg#icon-modal-1"></use></svg>
                     </div>
                     
                     <div class="modal-section">
-                    <input type="tel"  name="phone" id="phone" class="input">
-                    <label for="phone" class="modal-name"> <svg width=20 height=20><use href="./sprite.svg#icon-modal-2"></use></svg>Телефон</label>
+                        <input type="tel"  name="phone" id="phone" class="input" placeholder=" " required>
+                        <label for="phone" class="modal-name"> Телефон</label>
+                        <svg class="modal-svg" width=13 height=20><use href="./sprite-modal.svg#icon-modal-2"></use></svg>
                     </div>
                     
                     <div class="modal-section">
-                    <input type="email"  name="email" id="email" class="input" >
-                    <label for="email" class="modal-name" > <svg width=20 height=20><use href="./sprite.svg#icon-modal-3"></use></svg>Почта</label>
+                        <input type="email"  name="email" id="email" class="input" placeholder=" " required>
+                        <label for="email" class="modal-name" > Почта</label>
+                        <svg class="modal-svg" width=15 height=20><use href="./sprite-modal.svg#icon-modal-3"></use></svg>
                     </div>
                     
                     <label for="textarea"></label>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea"></textarea>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea" placeholder="Коментарий" class="textarea"></textarea>
                     
                     
-                    <label class="agreement" for="checkbox"> <input type="checkbox" name="checkbox" id="checkbox"> Соглашаюсь с рассылкой и принимаю Условия договора</label>
                     
-                    <button class="hero-section-button-modal" data-modal-close>Отправить</button>
+                       <label class="agreement" > 
+                        <input type="checkbox" name="checkbox" class="checkbox" required>
+                        <span class="check-field"> <svg  width=15 height=15><use href="./sprite-modal.svg#icon-modal-4"></use></svg></span>
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="agreement-link">Условия договора</a>
+                    </label> 
+                
+                    
+                    <button type="submit" class="hero-section-button-modal" data-modal-close >Отправить</button>
                 </form>
     
                 <!-- <button class="hero-section-button-modal" data-modal-close>Отправить</button> -->
