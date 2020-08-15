@@ -378,6 +378,9 @@ body {
     color: var(--accent-color);
 }
   
+.textarea:required:valid:not(:placeholder-shown){
+    color: var(--accent-color);
+}
   
 .contact-form-btn.submit{
     background-color: var(--accent-color);
